@@ -1,6 +1,6 @@
 .menu{
     width: 100%;
-    height: 80px;
+    height: 100%;
     background:transparent;
     color:#fff;
     display:flex;
@@ -30,11 +30,16 @@
     width:55%;
     display: flex;
     justify-content: space-around;
+    flex-flow:row wrap;
 }
 .enlaces-menu a {
     text-decoration: none;
     color:#fff;
+
+    padding: 3px;
+    border-bottom: solid 1px transparent;
 }
 .enlaces-menu a:hover{
-    border-bottom: solid 1px #404040;
+    border-bottom: solid 1px #4a69bd;
+    transition:0.2s linear;
 }

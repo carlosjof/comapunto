@@ -20,11 +20,15 @@ class App extends Component {
               desarrolladores
             </div>
           </div>
-          <div className="floatButton">
-            <img src={downArrow} className="downbutton" alt="Down Button" />
-          </div>
+          <div className="buttonContainer">
+            <div className="floatButton">
+              <img src={downArrow} className="downbutton" alt="Down Button" />
+            </div>
+          </div> 
+
         </div>
         <div className="body">
+        <h1>Articulos Recientes</h1>
           <Post/>
         </div>
       </div>;
