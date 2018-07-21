@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import HeaderComponent from './Components/HeaderComponent'
 import Post from './Components/PostComponent'
-import downArrow from './Ico-img/downArrow.png'
+import LoginModal from "./Components/LogInComponent";
+import SignUpModal from "./Components/SignUpComponent";
 import './css/App.css';
 
 class App extends Component {
   render() {
     return <div className="App">
+      <LoginModal />
+      <SignUpModal />
         <div className="banner">
           <div className="header">
             <HeaderComponent />
@@ -20,11 +23,6 @@ class App extends Component {
               desarrolladores
             </div>
           </div>
-          <div className="buttonContainer">
-            <div className="floatButton">
-              <img src={downArrow} className="downbutton" alt="Down Button" />
-            </div>
-          </div> 
 
         </div>
         <div className="body">

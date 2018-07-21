@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import image from '../Images/correct2-too-small.jpg'
 import UserImage from '../Ico-img/user.png'
+
 import '../css/PostComponent.css'
 class PostComponent extends Component {
     render(){

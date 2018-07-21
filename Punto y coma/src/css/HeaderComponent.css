@@ -35,7 +35,7 @@
 .enlaces-menu a {
     text-decoration: none;
     color:#fff;
-
+    cursor:pointer;
     padding: 3px;
     border-bottom: solid 1px transparent;
 }

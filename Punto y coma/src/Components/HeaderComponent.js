@@ -28,26 +28,36 @@ class HeaderComponent extends Component {
             });
         });
     }
+
     render(){
         return(
+            
             <nav className="menu">
                 <div className="Titulo-menu">
-                    <img src={logo} className="logo"/>
+                    <img src={logo} className="logo" alt="logo"/>
                     <span>Punto y coma</span>
                 </div>
+
                 <div className="enlaces-menu-container">
                     <div className="enlaces-menu">
-                        <a href="#">Inicio</a>
-                        <a href="#">Post</a>
-                        <a href="#">Off topic</a>
-                        <a href="#">Iniciar sesion</a>
-                        <a href="#">Registrarse</a>
+                        <a >Inicio</a>
+                        <a >Post</a>
+                        <a >Off topic</a>
+                        <a onClick={this.openLoginModal}>Iniciar sesion</a>
+                        <a onClick={this.openSignUpModal}>Registrarse</a>
                     </div>
                 </div>
             </nav>
         )
     }
-
+    openLoginModal() {
+        let modal = document.getElementById("LogInModal");
+        modal.setAttribute("open", true)
+    }
+    openSignUpModal(){
+        let modal = document.getElementById("SignUpModal");
+        modal.setAttribute("open", true)
+    }
 }
 
 export default HeaderComponent
